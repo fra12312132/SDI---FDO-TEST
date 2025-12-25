@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "tipo": "controllo",
+    "descrizione": "Controllo di routine su soggetto a piedi",
+    "radio": "Centro a Volante Uno, procedere a controllo nominativo",
+    "esito": ["regolare", "documento_scaduto"]
+  },
+  {
+    "id": 2,
+    "tipo": "agitato",
+    "descrizione": "Persona agitata nei pressi di palestra",
+    "radio": "Segnalata persona molesta, possibile alterazione",
+    "esito": ["collabora", "rifiuta", "resiste"]
+  },
+  {
+    "id": 3,
+    "tipo": "veicolo",
+    "descrizione": "Controllo veicolo sospetto",
+    "radio": "Veicolo fermato per accertamenti",
+    "esito": ["assicurazione_ok", "assicurazione_scaduta"]
+  },
+  {
+    "id": 4,
+    "tipo": "richiesta_pm",
+    "descrizione": "Procedura che richiede PM",
+    "radio": "Richiesta contatto PM per atti successivi",
+    "esito": ["autorizzato", "negato"]
+  }
+]

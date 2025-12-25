@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>SDI Radio Simulator - SIMULAZIONE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- STILE -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- SCRIPT -->
+  <script defer src="js/app.js"></script>
+  <script defer src="js/radio.js"></script>
+  <script defer src="js/generatori.js"></script>
+  <script defer src="js/sdi.js"></script>
+</head>
+
+<body>
+
+<header class="topbar">
+  <div class="title">
+    📻 <strong>SDI RADIO SIMULATOR</strong>
+    <span class="sub">(SIMULAZIONE)</span>
+  </div>
+  <div class="status">
+    Centrale Operativa
+  </div>
+</header>
+
+<main class="layout">
+
+  <!-- RADIO -->
+  <section class="radio">
+    <h2>Canale Radio</h2>
+
+    <div id="radio-log" class="radio-log"></div>
+
+    <div class="radio-ptt">
+      <input id="radio-input" type="text"
+        placeholder="Volante Uno da Centro, avanti...">
+      <button id="radio-send">TRASMETTI</button>
+    </div>
+  </section>
+
+<!-- SDI -->
+<section class="sdi">
+  <h2>SDI Operativo</h2>
+
+  <!-- AZIONI SDI -->
+  <div class="sdi-actions">
+    <button data-action="nominativo">Controllo nominativo</button>
+    <button data-action="documento">Mostra documento</button>
+    <button data-action="pm">Chiama PM</button>
+    <button data-action="chiudi">Chiudi evento</button>
+  </div>
+
+  <h2>Atti Operativi</h2>
+
+  <!-- ATTI -->
+  <div class="sdi-actions">
+    <button onclick="verbaleFermo()">Verbale di fermo</button>
+    <button onclick="verbaleMulta()">Multa CDS</button>
+    <button onclick="fermoVeicolo()">Fermo veicolo</button>
+    <button onclick="sequestro()">Sequestro</button>
+    <button onclick="denuncia()">Denuncia</button>
+    <button onclick="arresto()">Arresto</button>
+    <button onclick="fotosegnalamento()">Fotosegnalamento</button>
+    <button onclick="impronte()">Impronte</button>
+  </div>
+
+  <!-- PANEL -->
+  <div id="sdi-panel" class="sdi-panel">
+    <em>In attesa di operazioni…</em>
+  </div>
+</section>
+
+
+<!-- NOTIFICHE -->
+<div id="toast" class="toast"></div>
+
+</body>
+</html>
