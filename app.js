@@ -58,4 +58,17 @@ function aggiungiStorico(tipo, contenuto){
   logMsg("sys", `Aggiunto allo storico: ${tipo}`);
 }
 
+// ===============================
+// ESPOSIZIONE FUNZIONI GLOBALI
+// ===============================
+window.verbaleFermo = verbaleFermo;
+window.verbaleMulta = verbaleMulta;
+window.fermoVeicolo = fermoVeicolo;
+window.sequestro = sequestro;
+window.denuncia = denuncia;
+window.arresto = arresto;
+window.fotosegnalamento = fotosegnalamento;
+window.impronte = impronte;
+window.pm = pm;
+
 
